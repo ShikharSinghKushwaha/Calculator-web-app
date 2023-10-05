@@ -72,50 +72,32 @@ themeNum.forEach(nums => {
         let getId = nums.getAttribute("id");
         console.log(getId);
         if(getId === 'one'){
-            // document.body.classList.add("first-theme");
-            // localStorage.setItem("theme-data",'first-theme')
+            
             modeone();
         }else{
             document.body.classList.remove("first-theme");
-          //  localStorage.removeItem('first-theme')
+        
         }
         if(getId === 'two'){
         
             toggle.classList.add("move-to-two");
             modetwo();
-         // btnContainer.classList.add("second-theme");
- 
-            // document.body.classList.add("second-theme");
-            // localStorage.setItem("theme-data",'second-theme')
+        
         }else{
             toggle.classList.remove("move-to-two")
             document.body.classList.remove("second-theme");
-        //  btnContainer.classList.remove("second-theme");
-
-//             localStorage.removeItem('second-theme')
+       
 
         }
         if(getId === 'three'){
-          //addThird();
-          //document.body.classList.add("third-theme");
+         
           toggle.classList.add('move-to-three');
           modethree();
-       //   btnContainer.classList.add("third-theme");
-
-        //   localStorage.setItem("theme-data",'third-theme')
-        //    toggle.classList.add("move-to-three");
         }else{
             toggle.classList.remove("move-to-three")
             document.body.classList.remove("third-theme");
-         // btnContainer.classList.remove("third-theme");
-
-            //localStorage.removeItem('third-theme')
-            // modetwo();
         }
     });
-//checkingLocal();
-
-  ///  ids = nums;
 });
 
 console.log('getlocalitem',getLocalItem);
@@ -135,10 +117,7 @@ function modeone(){
      toggle.classList.add("move-to-two");
      btnContainer.classList.add("second-theme");
      btnContainer.classList.remove("third-theme");
-
-     //btnContainer.classList.toggle("second-theme");
  }
- //modetwo();
  function modethree(){
      document.body.classList.add("third-theme");
      localStorage.setItem("theme-data",'third-theme');
@@ -151,17 +130,16 @@ function modeone(){
 
 
 if (getLocalItem === "first-theme") {
-   //localStorage.setItem("theme-data",'first-theme')
+  
    modeone();
 }else if(getLocalItem === "second-theme"){ 
     modetwo();
-    //localStorage.setItem("theme-data",'second-theme');
+   
 }else if(getLocalItem === "third-theme"){
     modethree();
-    //localStorage.setItem("theme-data",'third-theme');
+
 }else{
     localStorage.setItem("theme-data",'first-theme');
 }
 
 
-//modethree();
