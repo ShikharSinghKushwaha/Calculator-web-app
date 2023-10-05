@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        
+        <div class="calculator-container">
+            <div class="top-bar">
+                 <h2>calc</h2>
+
+                 <div class="icon">
+                 <span style="font-weight: bold;font-size: 1.3em;text-align: right;">Theme</span>
+                 
+                   <div class="toggle-container">
+                    <h3 class="theme-num" id="one" >1</h3>
+                    <h3 class="theme-num" id="two" >2</h3>
+                    <h3 class="theme-num" id="three" >3</h3>
+
+                   
+                    <div class="toggle"></div>
+                   </div>
+                 </div>
+            </div>
+            <div class="input-container">
+            <input type="text" id="inputs" class="input" placeholder="Enter Number" />
+</div>      
+           <h4 id="error" style="position: absolute;">Please Enter A Number..</h4>
+            <div class="btn-containers" data-theme="second">
+                <input type="button" class="inputs-style btn" value="7" />
+                <input type="button" class="inputs-style  btn" value="8" />
+                <input type="button" class="inputs-style  btn" value="9" />
+                <input type="button" class="inputs-style  delete " value="Del" />
+                <input type="button" class="inputs-style  btn" value="4" />
+                <input type="button" class="inputs-style  btn" value="5" />
+                <input type="button" class="inputs-style  btn" value="6" />
+                <input type="button" class="inputs-style  btn" value="+" />
+                <input type="button" class="inputs-style  btn" value="1" />
+                <input type="button" class="inputs-style  btn" value="2" />
+                <input type="button" class="inputs-style  btn" value="3" />
+                <input type="button" class="inputs-style  btn" value="-" />
+                <input type="button" class="inputs-style  btn" value="." />
+                <input type="button" class="inputs-style  btn" value="0" />
+                <input type="button" class="inputs-style  btn" value="/" />
+                <input type="button" class="inputs-style  btn" value="*" />
+                
+                <input type="button" class="inputs-style  reset" value="Reset" />
+                <input type="button" class="inputs-style  equal" value="=" />
+
+
+
+ 
+            </div>
+        </div>
+    </main>
+ <div style="text-align: center;color: white;margin-top: -20px;">
+    Challenge by Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ShikharSinghKushwaha" style="text-decoration: none;color: dodgerblue;">Shikhar Singh K</a>.
+  </div>
+    <script src="index.js"></script>
+</body>
+</html>
